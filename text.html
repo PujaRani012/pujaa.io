@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 20px;
+        }
+        .image, .im, .imageo, .imi,.imageoo,.imii {
+            flex: 1 1 45%;
+            margin: 10px;
+        }
+        .image img, .imageo img ,.imageoo img{
+            width: 100%;
+            height: auto;
+        }
+        @media (max-width: 768px) {
+            .image, .im, .imageo, .imi,.imageoo,.imii {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="image">
+            <img id="pix" src="block1.png" alt="iic">
+        </div>
+        <div class="im">
+            <h1><b>Move faster with your tools in one place</b></h1>
+            <p>Automate away routine tasks with the power of generative AI and simplify your workflow with all your favourite apps ready to go in Slack.</p>
+            <a href="#">Learn more about Slack platform</a>
+        </div>
+    </div>
+    <div class="container">
+        
+        <div class="imi">
+            <h1><b>Choose how you want to work</b></h1>
+            <p>In Slack, you have got all the flexibility to work when, where, and how it's best for you. You can easily chat, send audio and video clips, or join a huddle to talk things through live.</p>
+            <a href="#">Learn more about Slack platform</a>
+        </div>
+        <div class="imageo">
+            <img id="pixx" src="block2.png" alt="iic">
+        </div>
+    </div>
+    <div class="container">
+    <div class="imageoo">
+        <img id="pixxx" src="block3.png" alt="iic">
+        </div>
+        <div class="imii">
+        <h1><b>Bring ur team together</b></h1>
+        <p>At the hearts of slack are channels:organised spaces for everyone and everything that u need for work.In channels,it's easier to connect across departments,offices,time zones and even other companies
+        </p>
+        <a href="">Learn more about channels</a>
+        </div>
+        </div>
+</body>
+</html>
+

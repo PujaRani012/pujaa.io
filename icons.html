@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centered Images</title>
+    <style>
+        .icons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px; /* Adjust the gap between images as needed */
+        }
+        .icons img {
+            max-width: 100px; /* Adjust the size of the images as needed */
+            height: auto;
+        }
+        @media (max-width: 600px) {
+            .icons img {
+                max-width: 80px; /* Adjust the size for mobile view */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="icons">
+        <a href=""><img id="pi" src="airbnb.png" alt="Airbnb"></a>
+        <a href=""><img id="pic" src="nasa.png" alt="NASA"></a>
+        <a href=""><img id="pice" src="uberr.png" alt="Uber"></a>
+        <a href=""><img id="picee" src="nyt.png" alt="NYT"></a>
+        <a href=""><img id="piceee" src="etsy.png" alt="Etsy"></a>
+    </div>
+</body>
+</html>

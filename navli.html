@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+       .container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.imi, .imageo {
+    flex: 1;
+    padding: 10px;
+}
+
+.imi {
+    order: 1;
+}
+
+.imageo {
+    order: 2;
+    text-align: center;
+}
+
+#pixx {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Styles for laptop view and larger */
+@media (min-width: 768px) {
+    .container {
+        flex-wrap: nowrap;
+    }
+
+    .imi {
+        order: 1;
+        text-align: left;
+    }
+
+    .imageo {
+        order: 2;
+        text-align: right;
+    }
+}
+
+/* Styles for mobile view */
+@media (max-width: 767px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .imi {
+        order: 2;
+        text-align: center;
+    }
+
+    .imageo {
+        order: 1;
+        text-align: center;
+    }
+}
+
+ 
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+                
+        <div class="imi">
+            <h1><b>Choose how you want to work</b></h1>
+            <p>In Slack, you have got all the flexibility to work when, where, and how it's best for you. You can easily chat, send audio and video clips, or join a huddle to talk things through live.</p>
+            <a href="#">Learn more about Slack platform</a>
+        </div>
+        <div class="imageo">
+            <img id="pixx" src="block2.png" alt="iic">
+        </div>
+    </div>
+</body>
+</html>
